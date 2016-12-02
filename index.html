@@ -1,0 +1,60 @@
+<style>
+.menulink
+{ 
+  color: #0000FF;
+  cursor: pointer;
+}
+
+.menulink:hover
+{ 
+  color: #FF0000;
+  cursor: pointer;
+}
+.select {
+font-size: 20px;
+}
+#iframe1 {
+position: relative;
+left: 50%;
+margin-left: -475px;
+}
+#top-select {
+top: 15px;
+position: relative;
+width: 905px;
+left: 50%;
+margin-left: -452px;
+}
+body {
+min-width: 950px;
+}
+</style>
+    <script language="javascript" type="text/javascript">
+function jump(form) {
+var myindex=form.menu.selectedIndex
+if (form.menu.options[myindex].value != "0") 
+{
+window.open(form.menu.options[myindex].value, 
+target="iframe1");
+}
+}
+//-->
+</script>
+
+<div id="top-select">
+<form name="lissamenu2" ACTION=URI>
+<select class="select" name="menu" onchange="jump(this.form)">
+<option value="0">Välj spelsida</option>   
+<option value="10bet.html">10bet</option>
+<option value="comeon.html">ComeOn</option>
+<option value="expekt.html">Expekt</option>
+<option value="guts.html">Guts</option>
+<option value="ladbrokes.html">Ladbrokes</option>
+<option value="mobilbet.html">Mobilbet</option>
+<option value="mybet.html">Mybet</option>
+<option value="superlenny.html">Superlenny</option>
+<option value="willhill.html">Willihamhill</option>
+</select>
+</form>
+</div>
+<iframe id="iframe1" src="oddsmatcher.html" style="border:0px #ffffff none;" name="iframe1" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="675px" width="950px" allowfullscreen></iframe>
