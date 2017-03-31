@@ -98,7 +98,7 @@ body.fixed .header-fixed .header-limiter nav {
 
 /* Making the header responsive */
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 650px) {
 
 	.header-fixed {
 		padding: 20px 0;
