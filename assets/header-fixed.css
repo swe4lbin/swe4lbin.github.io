@@ -12,7 +12,7 @@
 }
 
 .header-fixed .header-limiter {
-	max-width: 75%;
+	width: 75%;
 	text-align: center;
 	margin: 0 auto;
 }
