@@ -8,7 +8,7 @@
 
 
 
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.6.js"></script>
 
 
 <link rel="stylesheet" type="text/css" href="/css/normalize.css">
@@ -207,9 +207,9 @@ var msg = $('#msg');
 
 
 
-var url = 'http://www.okeyno.com/oddsmatcher/comeon';
+var url = 'https://www.okeyno.com/oddsmatcher/comeon';
 
-$.getJSON("http://query.yahooapis.com/v1/public/yql?" +
+$.getJSON("https://query.yahooapis.com/v1/public/yql?" +
 "q=select%20*%20from%20html%20where%20url%3D%22" +
 encodeURIComponent(url) +
 "%22&format=xml'&callback=?",
@@ -269,7 +269,7 @@ $('.title').each(function() {
 
 $('.title').each(function() {
     var text = $(this).text();
-    $(this).text(text.replace('Outcome', 'Utgång')); 
+    $(this).text(text.replace('Outcome', 'UtgÃ¥ng')); 
 });
 
 $('.title').each(function() {
